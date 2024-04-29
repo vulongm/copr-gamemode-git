@@ -1,6 +1,6 @@
-%global commit a
+%global commit a2fe0108b59948ed861ccc087aa91af9273b036f
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global git_date 20240327
+%global git_date 20240327T164445Z
 %global tag 1.8.1
 
 Name:       gamemode
