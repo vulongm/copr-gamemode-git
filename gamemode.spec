@@ -4,7 +4,7 @@
 %global tag 1.8.1
 
 Name:       gamemode
-Version:    %{tag}^%{git_date}git%{shortcommit}
+Version:    %{tag}^%{git_date}.git%{shortcommit}
 Release:    %autorelease
 Summary:    Optimize system performance for games on demand
 License:    BSD
