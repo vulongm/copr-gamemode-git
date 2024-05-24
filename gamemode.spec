@@ -1,11 +1,12 @@
 %global commit a2fe0108b59948ed861ccc087aa91af9273b036f
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global git_date 20240327T164445Z
+%global git_date 20240327
 %global tag 1.8.1
+%global ver_count 1
 
 Name:       gamemode
-Version:    %{tag}^%{git_date}.git%{shortcommit}
-Release:    %autorelease
+Version:    %{tag}.90
+Release:    %{ver_count}.%{git_date}git%{shortcommit}
 Summary:    Optimize system performance for games on demand
 License:    BSD
 URL:        https://github.com/FeralInteractive/gamemode
