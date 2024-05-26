@@ -27,7 +27,7 @@ jobs:
         run: |
           current_commit=$(grep -oP '(?<=^%global commit ).*' gamemode.spec)
           current_git_date=$(grep -oP '(?<=^%global git_date ).*' gamemode.spec)
-          current_ver_count=$(grep -oP '(?<=^%global ver_count ).*' gamemode.spec
+          current_ver_count=$(grep -oP '(?<=^%global ver_count ).*' gamemode.spec)
           echo "current-commit=$current_commit" >> $GITHUB_OUTPUT
           echo "current-git-date=$current_git_date" >> $GITHUB_OUTPUT
           echo "current-ver-count=$current_ver_count" >> $GITHUB_OUTPUT
