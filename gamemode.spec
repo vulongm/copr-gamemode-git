@@ -5,7 +5,7 @@
 %global ver_count 1
 
 Name:       gamemode
-Version:    %{tag}.90
+Version:    %{tag}
 Release:    %{git_date}.%{ver_count}.%{shortcommit}%{?dist}
 Summary:    Optimize system performance for games on demand
 License:    BSD
