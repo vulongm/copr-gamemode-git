@@ -6,7 +6,7 @@
 
 Name:       gamemode
 Version:    %{tag}.90
-Release:    %{ver_count}.%{git_date}g%{shortcommit}%{?dist}
+Release:    %{ver_count}.%{git_date}git%{shortcommit}%{?dist}
 Summary:    Optimize system performance for games on demand
 License:    BSD
 URL:        https://github.com/FeralInteractive/gamemode
