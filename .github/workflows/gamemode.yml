@@ -63,4 +63,3 @@ jobs:
           git add gamemode.spec
           git commit -m "Update gamemode to ${{ steps.get-commit.outputs.latest-commit }}"
           git push
-        
