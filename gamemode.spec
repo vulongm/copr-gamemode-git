@@ -8,7 +8,8 @@ Name:       gamemode
 Version:    %{tag}
 Release:    %{git_date}.%{ver_count}.%{shortcommit}%{?dist}
 Summary:    Optimize system performance for games on demand
-License:    BSD
+# Automatically converted from old format: BSD - review is highly recommended.
+License:	LicenseRef-Callaway-BSD
 URL:        https://github.com/FeralInteractive/gamemode
 Source0:    %{url}/archive/%{commit}.tar.gz
 
