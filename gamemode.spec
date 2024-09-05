@@ -44,7 +44,7 @@ Files for development with %{name}.
 %autosetup -p1 -n %{name}-%{commit}
 
 %build
-%meson -Ddefault_library=both
+%meson
 %meson_build
 
 %check
@@ -53,11 +53,9 @@ Files for development with %{name}.
 %install
 %meson_install
 
-%ldconfig_scriptlets
-
 %files
 %license LICENSE.txt
-%doc     README.md
+%doc	 README.md
 %{_bindir}/gamemoded
 %{_bindir}/gamemodelist
 %{_bindir}/gamemoderun
@@ -67,25 +65,24 @@ Files for development with %{name}.
 %{_libexecdir}/gpuclockctl
 %{_libexecdir}/procsysctl
 %{_datadir}/polkit-1/actions/com.feralinteractive.GameMode.policy
-%{_datadir}/polkit-1/rules.d/gamemode.rules
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
+%{_datadir}/polkit-1/rules.d/gamemode.rules
 %{_datadir}/gamemode/gamemode.ini
 %{_libdir}/libgamemode*.so.*
-%{_libdir}/libgamemode*.so
-%{_sysconfdir}/security/limits.d/10-gamemode.conf
-%{_prefix}/lib/sysusers.d/gamemode.conf
+%{_sysusersdir}/gamemode.conf
 %{_userunitdir}/gamemoded.service
 %{_mandir}/man8/gamemoded.8*
 %{_mandir}/man1/gamemoderun.1*
 %{_mandir}/man1/gamemodelist.1*
 %{_mandir}/man1/gamemode-simulate-game.1*
 %{_metainfodir}/io.github.feralinteractive.gamemode.metainfo.xml
+%config(noreplace) %{_sysconfdir}/security/limits.d/10-gamemode.conf
 
 %files devel
 %{_includedir}/gamemode_client.h
-%{_libdir}/libgamemodeauto.a
 %{_libdir}/pkgconfig/gamemode*.pc
 %{_libdir}/pkgconfig/libgamemodeauto.pc
+%{_libdir}/libgamemode*.so
 
 %changelog
 %autochangelog
