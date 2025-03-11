@@ -64,6 +64,7 @@ Files for development with %{name}.
 %{_libexecdir}/cpugovctl
 %{_libexecdir}/gpuclockctl
 %{_libexecdir}/procsysctl
+%{_libexecdir}/platprofctl
 %{_datadir}/polkit-1/actions/com.feralinteractive.GameMode.policy
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
 %{_datadir}/polkit-1/rules.d/gamemode.rules
