@@ -1,6 +1,6 @@
-%global commit d84c5ded1c6e86de31ac277cefa191acdd8ad9c5
+%global commit 7c49d6e1dbdd2b360a1a24e6af44d891f8f99f43
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global git_date 20250224
+%global git_date 20250314
 %global tag 1.8.2
 %global ver_count 1
 
