@@ -2,7 +2,7 @@
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global git_date 20250904
 %global tag 1.8.2
-%global ver_count 1
+%global ver_count 2
 
 Name:       gamemode
 Version:    %{tag}
