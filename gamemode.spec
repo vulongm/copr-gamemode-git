@@ -1,8 +1,8 @@
-%global commit f0a569a5199974751a4a75ebdc41c8f0b8e4c909
+%global commit bda6073db57cc797be16e1ae64350602b732e655
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global git_date 20250904
+%global git_date 20260417
 %global tag 1.8.2
-%global ver_count 2
+%global ver_count 1
 
 Name:       gamemode
 Version:    %{tag}
